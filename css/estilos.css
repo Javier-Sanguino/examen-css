@@ -1,0 +1,195 @@
+body{
+	background-color: #02010a;
+	color: white;
+	margin: 1%;
+	padding: 0;
+	font-family: verdana;
+}
+#content{
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	animation-duration: 1.2s;
+	animation-name: animacion;
+}
+@keyframes animacion {
+	0%{ margin-top: 150%;}
+	60%{ margin-top: -5%;}
+	100%{ margin-top: 0%;}
+}
+header{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header h1{
+	font-size: 2em;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	padding: 10px;
+	margin: 10px;
+}
+img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+.menu ul li{ 
+	font-size: 1.5em;
+	background-color: #5b7989;
+	list-style: none;
+	float: right;
+	display: inline;
+	padding: 15px 10px;
+	margin: 0;
+}
+.active a{ text-decoration: none; color: white;}
+.menu ul li a { color: white; }
+.menu ul li:hover{ background-color: #02010a;}
+#central{
+	margin: 0;
+	background-color: #82c3a6;
+	width: 100%;
+	display: flex;
+}
+#imagen-central{
+	display: block;
+	margin: 10px;
+	width: 98%;	
+}
+.galeria {
+	width: 100%;
+	margin: 0;
+	background-color: #d5c75f;
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;	
+}
+.galeria img{
+	padding: 0;
+	margin:  10px auto;
+	width: 45%;
+	border: solid 1px black;
+}
+.galeria #foto_1:hover{
+	transition-duration: 1s;
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: solid 2px black;
+	margin: auto;
+	transform: rotate(10deg);
+	width: 35%;
+	height: 30%;
+}
+.galeria #foto_2:hover{
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: solid 2px black;
+	transform: translate(20px,-5px);
+	transition-duration: 1s;
+}
+#pie{
+	width: 100%;
+	margin: 0;
+	border-radius: 0 0 10px 10px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	color: #000;
+}
+#contenido{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+#contacto{
+	width: 24%;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	line-height: 0;
+}
+#contacto a{
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+}
+#mail{font-size: 30px; padding: 2px;}
+#whap{font-size: 30px; color: #27B030;}
+#terminos{
+	width: 24%;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+#social{
+	width: 24%;
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+}
+#social a{
+	font-size: 30px;
+	padding: 10px;
+}
+#insta{color:#e4405f;}
+#face{color: #3b5999;}
+#messenger{color: #0084ff;}
+#twitter{color: #55acee;}
+#derechos{
+	width: 24%;
+	padding: 1%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+@media(min-width: 900px){}
+@media(max-width: 900px){
+#content{width: 100%;}
+#central{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#imagen-central{
+	margin: 10px auto;
+	width: 98%;	
+}
+.menu{margin: auto;}	
+.galeria {
+	width: 100%;
+	margin: 0;
+	display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+.galeria img{
+	margin:  10px auto;
+	width: 95%;
+}
+#foto_2{
+	width: 87%;
+}
+.galeria #foto_1:hover{
+	margin: 50px auto;
+	transform: rotate(10deg);
+	width: 80%;
+}
+#pie{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#contenido{
+	display: flex;
+	flex-direction: column;
+}
+#social:{width: 100%;}
+#contacto{width: 100%;}
+#derechos{width: 100%;}
+#terminos{width: 100%;}
+}
